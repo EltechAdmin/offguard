@@ -1,0 +1,142 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+#defectDiv {
+    min-height:100%;
+    min-width: 100%;
+    position:relative;
+}
+
+#body {
+    padding:10px;
+    padding-bottom:30px;   /* Height of the footer */
+}
+
+span {
+    font-size: 28px;   
+    font-family: serif;
+}
+
+.navbar{
+    background-color: deepskyblue;
+    text-align: center;
+    border-radius: 0;
+    padding 0px 20px;
+}
+
+.navbar ul {
+    padding-top: 10px;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-family: Impact, Charcoal, sans-serif;
+    display: inline;
+    text-align: center;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: white;
+    margin: auto;
+    padding: 16px 10px;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.prettyTable {
+    background: #fff;
+    border-radius: 2px;
+    padding 5px;
+    font-family: Georgia,"Times New Roman", serif;
+}
+
+.prettyTable h1{
+    display: block;
+    text-align: center;
+    padding 0;
+    margin: 0px 0px 20px 0px;
+    font-size: x-large;
+}
+
+.prettyTable ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.prettyTable li {
+    display: block;
+    padding: 5px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.prettyTable li > label{
+    display: block;
+    float: left;
+    margin-top: -18px;
+    background: #FFFFFF;
+    height: 16px;
+    padding: 0px 5px;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+
+.prettyTable input[type="text"], .prettyTable textarea, .prettyTable select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: block;
+    outline: none;
+    border-radius: 3px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+}
+
+.prettyTable li > span {
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.prettyTable textarea {
+    resize: none;
+}
+
+.prettyTable button {
+    border: none;
+    font-size: 18px;
+}
+
+#scriptSelection select {
+    font-size: 15px;
+    outline: none;
+}
+
+#notesSection {
+    padding: 10px 50px;
+}
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:30px;   /* Height of the footer */
+    font-size: 12px;
+    padding: 7px 10px;
+    font-weight: bold;
+}

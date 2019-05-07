@@ -1,0 +1,155 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    height: 100%;
+    background: white;
+}
+
+#defectDiv {
+    min-height:100%;
+    min-width: 100%;
+    position:relative;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+}
+
+.navbar{
+    background-color: #F8F8FF;
+}
+
+.navbar ul li {
+    font-family: Georgia,"Times New Roman", serif;
+}
+
+.navbar-center, .navbar-right {
+    padding-top: 15px;
+    height: 55px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 20px;
+    color: #777777;
+}
+
+
+label {
+    margin-right: 0.5em;
+}
+.right {
+    float: right;
+}
+input.right {
+   /* margin-top: 5px;*/
+}
+
+.flex {
+    display: flex;
+    color: #777777;
+    font-size: 11px;
+    font-family: Georgia,"Times New Roman", serif;
+}
+
+
+#body {
+    padding:10px;
+    padding-bottom:30px;   /* Height of the footer */
+}
+
+legend {
+    text-align: center;
+}
+
+span {
+    font-size: 28px;   
+    font-family: Georgia,"Times New Roman", serif;
+}
+
+h1, h2, h3, h4, h5, h6, legend {
+    font-family: Georgia,"Times New Roman", serif;
+}
+
+
+/*.loader {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 90%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    border: 3px solid #f3f3f3; /* Light grey 
+    border-top: 3px solid #3498db; /* Blue 
+}*/
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.varHighlight {
+    font-family: monospace;
+    color: #cc0000;
+    font-size: 14px;
+}
+
+code {
+    font-family: monospace;
+    color: #0098cc;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+hr {
+    border-color: deepskyblue;
+}
+
+legend {
+    border-color: deepskyblue;
+}
+
+#scriptSelection select {
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: #777777;
+    font-size: 15px;
+    color: #F8F8FF;
+}
+
+#notesSection {
+    padding: 10px 50px;
+}
+
+#footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+    height:30px;   /* Height of the footer */
+    font-size: 12px;
+    padding: 7px 10px;
+    font-weight: bold;
+    background: #F8F8FF;
+    color: #777777;
+    font-family: Georgia,"Times New Roman", serif;
+}
+
+.col-md-3 {
+    float: left;
+   
+
+}
+/*li {
+    display: inline;
+}
+*/
