@@ -1,7 +1,7 @@
 <?php
 //include file which will make mysqli connection, this functionality will likely need improvements
 //include_once('/lib/pg/mysqli_db_connect.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'/www2/ToolKit/common/pg/mysqli_db_connect_ul.php');
+//include_once($_SERVER['DOCUMENT_ROOT'].'/www2/ToolKit/common/pg/mysqli_db_connect_ul.php');
 //include_once($_SERVER['DOCUMENT_ROOT'].'/www2/ToolKit/common/pg/tk_query.php');
 
 
@@ -351,7 +351,7 @@ function diparser() {
         <!-- BEGIN: page_content -->
 		<div id="content">
 
-			<div class="topnav" id="myTopnav">
+	<!--		<div class="topnav" id="myTopnav">
   <a href="#Queries" onclick="getInfo()" id="getInfoBut" >Get Info</a>
   <a href="#Queries" onclick="ShowQuery()" id="queriesBut" >Queries</a>
   <a href="#Defects" onclick="Defects()" id="defectsBut">Defects</a>
@@ -361,7 +361,7 @@ function diparser() {
 
 </div>
 
-  <a href="#" class="QuickLU" onclick="QuickLU()" id="LookupBut">Quick LookUp</a>
+-->
 
        <div id="myCtrl" ng-controller="myCtrl">
             <div id="BodyDiv">
@@ -371,164 +371,17 @@ function diparser() {
 <div class="infobody" id="infobody">
 <div class="infobody2" >
 	<h1 style="color:white;">Popular Links</h1>
-<a class="ghost-button-full-color" href="#" onclick="window.open('http://cs-support.ncr.com/')" >Service Now</a>
-<a class="ghost-button-full-color" href="#" onclick="window.open('https://ap.diginsite.net/connect/group/di-home/di-home')" >Admin Platform</a>
-<a class="ghost-button-full-color" href="#" onclick="window.open('http://devnull.prd1.diginsite.net/newtsp/')" >Dev-Null</a>
-<a class="ghost-button-full-color" href="#" onclick="window.open('https://splunk.diginsite.net/en-US/app/search/search')" >Splunk</a>
-<a class="ghost-button-full-color" href="#" onclick="window.open('https://ncr.quickbase.com/db/main')" >Quick base</a>
-<a class="ghost-button-full-color" href="#" onclick="window.open('https://jira.diginsite.net/secure/Dashboard.jspa')" >Jira</a>
-<a class="ghost-button-full-color" href="#" onclick="window.open('http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/Main_Page')" >Media Wiki</a>
-<a class="ghost-button-full-color" href="#" onclick="window.open('https://ncr.sharepoint.com/sites/d/TDS/SitePages/Home.aspx')" >SharePoint</a>
+
+<a class="ghost-button-full-color" href="#" onclick="window.open('http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/Main_Page')" >Back</a>
+<a class="ghost-button-full-color" href="#" onclick="window.open('https://ncr.sharepoint.com/sites/d/TDS/SitePages/Home.aspx')" >Next</a>
 </div>
 </div>
-<div id="moreLinks" class="moreLinks" >
-<br><br>
-   <p>More Links..</p>
-    <br>
-    <ul>
-        <li><a target="_blank" href="https://app.opsgenie.com/alert#/alert-genie">OpsGenie</a></li>
-        <li><a target="_blank" href="http://myworkday.ncr.com">MyWorkDay</a></li>
-        <li><a target="_blank" href="https://outlook.office365.com/owa/?realm=cornell-mayo.com">WebMail</a></li><li><a target="_blank" href="https://ncr.sharepoint.com/sites/d/TDS/Lists/TS%20PTO%20Calendar/calendar.aspx">TS PTO Calendar</a></li>
-    </ul>
-
-    Mediawiki Links:
-    <ul>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/USP">USP</a></li>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/Responsive_Design_(Leapfrog)">RUI</a></li>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/CMA">CMA </a></li>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/BPUI">BPUI</a></li>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/Imageservice_Check_Images">Image Service - Check Imaging Wiki</a></li>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/ImageService_OLS">Image Service - Online Statements Wiki</a></li>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/Registration">Registration</a></li>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/Business_Banking">Business Banking</a></li>
-        <br>
-        <li><a target="_blank" href="http://confluence.ncr.com/display/PSuite/Campaigns+not+showing+up+for+a+user">Promotion Suite (Confluence)</a></li>
-        <li><a target="_blank" href="http://bat-beast.prd1.lb.diginsite.net:8080/beast/default.jsp">BEAST</a></li>
-    </ul>
-    TS Engineer Wiki Links:
-    <ul>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/Bmartinez_notes">Bernardo Martinez</a></li>
-        <li><a target="_blank" href="http://mediawiki.dcb.diginsite.net/ifstswiki/index.php/User:Solson2">Steve Olson</a></li>
-           </ul>
 	</div>
-	<div id="NewUpdates" class="NewUpdates" >
-		<br><br>
-<p>New Updates..</p>
-    <ul>
-        <li>Business Banking Dashboard</li>
-        <li>...</li>
-           </ul>
-	</div>
-                <div id="body">
-
-                <!--    <div class="col-md-9 toolkitBox" ng-view></div>  	-->
-                    <div class="col-md-3" id="inputData" style="display: none ">
-                        <div class="toolkitBox" style="display: inline-block; ">
-                            <div class="column">
-                                <p>
-                                    <label>4-digit FIID*</label>
-                                    <input class="right" type="text" id="fiid" placeholder="FI ID" oninput="settings()" maxlength="5" n title="Please enter 4-digit FIID">
-                                </p>
-                                   <button  onclick="grabFI(2)" class="querybuttons" >Get FI</button>
-                                <p>
-                                    <label>Member Number*</label>
-                                    <input class="right" type="text" id="memnumber" placeholder="Member Number"ng-model="toolkitValues.MemberNumber">
-                                </p>
-                                   <button  onclick="grabmem(2)" class="querybuttons" >Get Member</button>
-                                <!-- Loader section 
-                                <div ng-show="loadingBar == true" class="loader"></div>-->
-                                <p class="queryLabel">
-                                    <label>Informix DB</label>
-                                    <input class="right" type="text" id="informix" ng-model="toolkitValues.Database">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>Datacenter</label>
-                                    <input class="right" type="text" id="datacenter" ng-model="toolkitValues.Datacenter">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>Swimlane</label>
-                                    <input class="right" type="text" id="swimlane" ng-model="toolkitValues.Swimlane">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>IB Domain</label>
-                                    <input class="right" oninput="settings()" id="ibdomain" type="text" id="TDOMAIN" ng-model="toolkitValues.Domain">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>Alt ID</label>
-                                    <input class="right" type="text" id="loginId" ng-model="toolkitValues.UserAltID">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>GUID</label>
-                                    <input class="right" type="text" id="id" ng-model="toolkitValues.UserGUID">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>Email</label>
-                                    <input class="right" type="text" id="emailAddress" ng-model="toolkitValues.userEmail">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>Status</label>
-                                    <input class="right" type="text" id="statusCode" ng-model="toolkitValues.UserStatus">
-                                </p>
-                                 <p class="queryLabel">
-                                    <label>Auth ID</label>
-                                    <input class="right" type="text" id="TAUTHID" ng-model="toolkitValues.UserAuthID">
-                                </p>
-                                 <p class="queryLabel">
-                                    <label>HB Domain</label>
-                                    <input class="right" type="text" id="backend_dir" ng-model="toolkitValues.UserDecompressedPin">
-                                </p>
-                                 <p class="queryLabel">
-                                    <label>FI Port</label>
-                                    <input class="right" type="text"  id="fiport"  oninput="settings()" ng-model="toolkitValues.UserPassword">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>TASK#</label>
-                               <input class="right" type="text" id="CASE1" ="TINC" id="inc"  placeholder="TASK12345" oninput="settings()" ng-model="IncidentNumber">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>RDB Port</label>
-                                    <input class="right" type="text" id="rdbport" ng-model="toolkitValues.LivePassword">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>PIN (Informix)</label>
-                                    <input class="right" type="text" id="TPIN" ng-model="toolkitValues.UserPin">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>Spons Cons</label>
-                                    <input class="right" type="text" id="TSPONSCONS" ng-model="toolkitValues.SponsCons">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>Billpay ID</label>
-                                    <input class="right" type="text" id="TBPID" ng-model="toolkitValues.BillPayID">
-                                </p>
-                                <p class="queryLabel">
-                                    <label>Sponsor ID</label>
-                                    <input class="right" type="text" id="TSPONSOR" ng-model="toolkitValues.SponsorID">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    	<div class="queryParentTOP" id="queryParentTOP">
-                    		
-                </div>
-
-                <div style="clear:both;"></div>
-                <br>
-                <br>
-
-
-            </div>
           </div>
 
        <!-- <!-- Modules
         <script src="js/app.js"></script>
-        <script src="js/services/LoginService.js"></script>
-
-
-
-
-
-    </script>
+        <script src="js/services/LoginService.js"></scriptADmin    </script>
    
     <?php
 }
@@ -541,13 +394,17 @@ function:		function createBottom()
 ?>
 		</div>
         <!-- END: page_content -->
-		<div id="footer">
-        	<div id="footer_bottom">
-            	<img src="img/bottomlogo.png" alt="NCR Monogram" width="25" />
-                <div id="disclaimer_text">© <?php echo date('Y')?> NCR | Digital Insight</div>
-              <!--  <img src="common/pg/images/logo_chrome.png" class="browser_logo" width="25" />
-                <div id="disclaimer_text"> Preferred Browser: Google Chrome. </div> -->
-                <div id="ebusiness_text">Created by TS Prod, Please <a href="mailto:el.hailegiorgis@ncr.com">contact us</a> with any issues or inquiries</div>
+<div class="footer">
+  <div id="button"></div>
+<div id="container">
+<div id="cont">
+<div class="footer_center">
+	   <h3>Classy footer text</h3>
+	                   <div id="ebusiness_text">Created by TS Prod, Please <a href="mailto:el.hailegiorgis@ncr.com">contact us</a> with any issues or inquiries</div>
+</div>
+</div>
+</div>
+</div>
                 <div class="spacer"></div>
             </div>
         </div>
